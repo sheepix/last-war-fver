@@ -1,0 +1,13 @@
+{
+  "name": "lw-pages",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "deploy": "./deploy-pages.sh"
+  },
+  "dependencies": {
+    "marked": "^15.0.7"
+  }
+}
+
