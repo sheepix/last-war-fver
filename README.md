@@ -7,6 +7,11 @@
 小羊收集的攻略库（NotebookLM）：`https://notebooklm.google.com/notebook/001aafd2-2771-4207-808b-3356ff08cbab`  
 读者可以在这里咨询 AI 关于游戏的问题。
 
+## 域名 / 访问入口
+
+- 生产站点（自定义域名）：`https://fver.sheepx.fun/`
+- Pages 默认域名：`https://lw-sheepx-fun.pages.dev/`
+
 ## 目录结构
 
 - `content/`：文章源文件（只改这里）
@@ -20,6 +25,7 @@
 ## 常用命令
 
 - 本地生成：`npm run build`
+- 本地调试：`npm run dev`（打开 `http://127.0.0.1:8788`）
 - 部署更新：`./deploy-pages.sh`
 
 ## 翻译语言（需保持同步）
@@ -30,6 +36,15 @@
 - `en`（English）
 - `vi`（Tiếng Việt）
 
+## 翻译说明
+
+除中文外的语言版本（繁体 / 英文 / 越南语）均**翻译自中文版本**。如发现差异或歧义，请以中文版为准并优先修正中文源文档。
+
+中文版（默认入口）：
+- `https://fver.sheepx.fun/last-war-canyon-storm-battlefield-beginner-guide/`
+- `https://fver.sheepx.fun/last-war-canyon-storm-battlefield-cheatsheet/`
+- `https://fver.sheepx.fun/last-war-s4-tanks-4-plus-1-adam-mixed-lineup/`
+
 新增语言时需要：
 1) 新增 `content/<lang>/guide.md` 与 `content/<lang>/lazy.md`
 2) 更新 `scripts/build.mjs` 里的 `LANGS`
@@ -37,4 +52,3 @@
 ## 兼容入口
 
 根目录的 `canyon-storm-battlefield-guide.md` / `canyon-storm-battlefield-guide-lazy-pack.md` 为占位提示，方便旧链接/书签迁移；实际内容在 `content/<语言>/`。
-

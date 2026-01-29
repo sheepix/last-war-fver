@@ -6,6 +6,7 @@ const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
 const SITE_TITLE = "fver 专用攻略站";
 const NOTEBOOK_LM_URL = "https://notebooklm.google.com/notebook/001aafd2-2771-4207-808b-3356ff08cbab";
+const OTHER_GUIDE_SITE_URL = "https://lastwar-tutorial.com/";
 
 const LANGS = [
   {
@@ -14,7 +15,7 @@ const LANGS = [
     label: "简体中文",
     htmlLang: "zh-Hans",
     tocTitle: "目录",
-    nav: { home: "首页", guide: "新手实战指南", lazy: "懒人包" },
+    nav: { home: "首页", list: "文章列表", other: "其他攻略站" },
   },
   {
     key: "zh-hant",
@@ -22,7 +23,7 @@ const LANGS = [
     label: "繁體中文",
     htmlLang: "zh-Hant",
     tocTitle: "目錄",
-    nav: { home: "首頁", guide: "新手實戰指南", lazy: "懶人包" },
+    nav: { home: "首頁", list: "文章列表", other: "其他攻略站" },
   },
   {
     key: "en",
@@ -30,7 +31,7 @@ const LANGS = [
     label: "English",
     htmlLang: "en",
     tocTitle: "Table of Contents",
-    nav: { home: "Home", guide: "Field Guide", lazy: "Quick Reference" },
+    nav: { home: "Home", list: "Articles", other: "Other guides" },
   },
   {
     key: "vi",
@@ -38,14 +39,26 @@ const LANGS = [
     label: "Tiếng Việt",
     htmlLang: "vi",
     tocTitle: "Mục lục",
-    nav: { home: "Trang chủ", guide: "Hướng dẫn", lazy: "Tóm tắt nhanh" },
+    nav: { home: "Trang chủ", list: "Bài viết", other: "Trang hướng dẫn khác" },
   },
 ];
 
 const ARTICLES = [
-  { key: "guide", file: "guide.md" },
-  { key: "lazy", file: "lazy.md" },
-  { key: "s4-tank", file: "s4-tank.md" },
+  {
+    key: "guide",
+    slug: "last-war-canyon-storm-battlefield-beginner-guide",
+    file: "guide.md",
+  },
+  {
+    key: "lazy",
+    slug: "last-war-canyon-storm-battlefield-cheatsheet",
+    file: "lazy.md",
+  },
+  {
+    key: "s4-tank",
+    slug: "last-war-s4-tanks-4-plus-1-adam-mixed-lineup",
+    file: "s4-tank.md",
+  },
 ];
 
 function slugify(text) {
@@ -118,6 +131,7 @@ function languageSwitcher({ currentLangKey, pageKind }) {
 
 function htmlPage({ htmlLang, pageTitle, subtitle, nav, navHref, langSwitchHtml, tocHtml, bodyHtml }) {
   const now = new Date().toISOString().slice(0, 19).replace("T", " ");
+  const hasToc = Boolean(tocHtml && tocHtml.trim().length > 0);
   return `<!doctype html>
 <html lang="${escapeHtml(htmlLang)}">
   <head>
@@ -126,7 +140,7 @@ function htmlPage({ htmlLang, pageTitle, subtitle, nav, navHref, langSwitchHtml,
     <title>${escapeHtml(`${SITE_TITLE} · ${pageTitle}`)}</title>
     <style>
       :root { color-scheme: light; }
-      body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; margin: 0; color: #111827; background: #ffffff; }
+      body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; margin: 0; color: #111827; background: radial-gradient(900px 500px at 10% 0%, #eef2ff, rgba(255,255,255,0) 60%), radial-gradient(900px 500px at 90% 0%, #ecfeff, rgba(255,255,255,0) 60%), #ffffff; }
       a { color: #2563eb; text-decoration: none; }
       a:hover { text-decoration: underline; }
       .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 60px; }
@@ -140,12 +154,12 @@ function htmlPage({ htmlLang, pageTitle, subtitle, nav, navHref, langSwitchHtml,
       h1 { font-size: 28px; margin: 0; letter-spacing: .2px; }
       .subtitle { margin-top: 6px; color: #374151; }
       .grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
-      @media (min-width: 920px) { .grid { grid-template-columns: 260px 1fr; align-items: start; } }
+      @media (min-width: 920px) { .grid.has-toc { grid-template-columns: 260px 1fr; align-items: start; } }
       .toc { position: sticky; top: 16px; border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px 12px 6px; background: #fff; }
       .toc-title { font-weight: 650; font-size: 14px; margin-bottom: 8px; }
       .toc ol { margin: 0; padding-left: 18px; }
       .toc li { margin: 6px 0; font-size: 13px; line-height: 1.3; }
-      article { border: 1px solid #e5e7eb; border-radius: 10px; padding: 18px 18px 22px; background: #fff; }
+      article { border: 1px solid #e5e7eb; border-radius: 14px; padding: 18px 18px 22px; background: rgba(255,255,255,.9); box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06); backdrop-filter: blur(6px); }
       article h1 { font-size: 26px; }
       article h2 { margin-top: 22px; font-size: 20px; }
       article h3 { margin-top: 18px; font-size: 16px; }
@@ -159,6 +173,16 @@ function htmlPage({ htmlLang, pageTitle, subtitle, nav, navHref, langSwitchHtml,
       .langbar { display: flex; gap: 8px; flex-wrap: wrap; }
       .lang { font-size: 12px; padding: 6px 10px; border: 1px solid #e5e7eb; border-radius: 999px; color: #111827; background: #fff; }
       .lang.active { border-color: #93c5fd; background: #eff6ff; }
+      .cards { display: grid; gap: 12px; margin: 12px 0 8px; }
+      @media (min-width: 920px) { .cards { grid-template-columns: 1fr 1fr; } }
+      .card { border: 1px solid #e5e7eb; border-radius: 14px; padding: 14px 14px 12px; background: #fff; box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05); }
+      .card-title { font-weight: 720; margin: 0 0 6px; font-size: 16px; }
+      .card-desc { margin: 0 0 10px; color: #4b5563; font-size: 13px; line-height: 1.6; }
+      .pillrow { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 6px; }
+      .pill { font-size: 12px; padding: 6px 10px; border: 1px solid #e5e7eb; border-radius: 999px; background: #fff; color: #111827; }
+      .pill.primary { background: #111827; border-color: #111827; color: #fff; }
+      .muted { color: #6b7280; font-size: 12px; }
+      .section-title { margin: 0; font-size: 18px; }
     </style>
   </head>
   <body>
@@ -169,8 +193,8 @@ function htmlPage({ htmlLang, pageTitle, subtitle, nav, navHref, langSwitchHtml,
             <a class="brand-title" href="${escapeHtml(navHref.home)}">${escapeHtml(SITE_TITLE)}</a>
             <nav class="topnav" aria-label="navigation">
               <a href="${escapeHtml(navHref.home)}">${escapeHtml(nav.home)}</a>
-              <a href="${escapeHtml(navHref.guide)}">${escapeHtml(nav.guide)}</a>
-              <a href="${escapeHtml(navHref.lazy)}">${escapeHtml(nav.lazy)}</a>
+              <a href="${escapeHtml(navHref.list)}">${escapeHtml(nav.list)}</a>
+              <a href="${escapeHtml(OTHER_GUIDE_SITE_URL)}" target="_blank" rel="noopener noreferrer">${escapeHtml(nav.other)}</a>
             </nav>
           </div>
           ${langSwitchHtml || ""}
@@ -179,8 +203,8 @@ function htmlPage({ htmlLang, pageTitle, subtitle, nav, navHref, langSwitchHtml,
         ${subtitle ? `<div class="subtitle">${escapeHtml(subtitle)}</div>` : ""}
         <div class="meta">生成时间：${now}</div>
       </header>
-      <div class="grid">
-        <div>${tocHtml || ""}</div>
+      <div class="grid ${hasToc ? "has-toc" : ""}">
+        ${hasToc ? `<div>${tocHtml || ""}</div>` : ""}
         <article>${bodyHtml}</article>
       </div>
     </div>
@@ -222,8 +246,7 @@ function navHrefFor(langKey) {
   const base = langKey ? `/${langKey}` : "";
   return {
     home: `${base}/` || "/",
-    guide: `${base}/guide/`,
-    lazy: `${base}/lazy/`,
+    list: `${base}/#toc` || "/#toc",
   };
 }
 
@@ -256,48 +279,74 @@ async function renderArticle({ lang, outLangKey, outBase, articleKey, file, subt
   );
 }
 
+function redirectPage(targetHref) {
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="0; url=${escapeHtml(targetHref)}" />
+    <title>Redirecting…</title>
+    <style>
+      body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; padding: 24px; }
+    </style>
+  </head>
+  <body>
+    <p>Redirecting to <a href="${escapeHtml(targetHref)}">${escapeHtml(targetHref)}</a>…</p>
+  </body>
+</html>`;
+}
+
 async function renderHome() {
   const zhHans = LANGS.find((l) => l.key === "zh-hans");
 
   const notebookBlock = `
-    <h2 id="ai">AI 咨询（小羊收集的攻略库）</h2>
-    <p>
-      我把资料整理在「小羊收集的攻略库」：<a href="${NOTEBOOK_LM_URL}">${NOTEBOOK_LM_URL}</a>。
-      你也可以在这里向 AI 咨询游戏相关问题。
-    </p>
+    <div class="card" style="border-color:#dbeafe;background:linear-gradient(135deg,#eff6ff,#ffffff)">
+      <div class="card-title">AI 咨询（小羊收集的攻略库）</div>
+      <p class="card-desc">把资料集中整理在 NotebookLM，你可以在那边直接问 AI 游戏问题。</p>
+      <div class="pillrow">
+        <a class="pill primary" href="${NOTEBOOK_LM_URL}">打开攻略库</a>
+        <span class="muted">${NOTEBOOK_LM_URL}</span>
+      </div>
+    </div>
   `;
 
-  const links = (
+  const cards = (
     await Promise.all(
       ARTICLES.map(async (a) => {
         const zhTitle = firstHeadingTitle(await readMarkdown(zhHans.dir, a.file));
         const perLang = LANGS.map((l) => {
-          const href = `/${l.key}/${a.key}/`;
-          return `<a href="${href}">${escapeHtml(l.label)}</a>`;
-        }).join(" · ");
+          const href = `/${l.key}/${a.slug}/`;
+          return `<a class="pill" href="${href}">${escapeHtml(l.label)}</a>`;
+        }).join(" ");
 
-        const defaultHref = `/${a.key}/`;
-        return `<li>
-          <div style="font-weight:650;margin-bottom:6px"><a href="${defaultHref}">${escapeHtml(
-            zhTitle
-          )}</a></div>
-          <div style="font-size:13px;color:#374151">${perLang}</div>
-        </li>`;
+        const defaultHref = `/${a.slug}/`;
+        const desc =
+          a.key === "guide"
+            ? "战场思路、技能配置、建筑优先级与一波流流程。"
+            : a.key === "lazy"
+              ? "快速照抄版：三条铁律 + 一波流顺序 + 自检清单。"
+              : "配队思路与对局要点总结，适合快速复盘。";
+        return `<div class="card">
+          <div class="card-title"><a href="${defaultHref}">${escapeHtml(zhTitle)}</a></div>
+          <p class="card-desc">${escapeHtml(desc)}</p>
+          <div class="pillrow">
+            <a class="pill primary" href="${defaultHref}">打开（默认简体）</a>
+            <span class="muted">其他语言：</span>
+            ${perLang}
+          </div>
+        </div>`;
       })
     )
   ).join("\n");
 
   const bodyHtml = `
-    <h2 id="toc">文章目录</h2>
-    <ul style="padding-left:18px">
-      ${links}
-    </ul>
-    <h2 id="about">说明</h2>
-    <ul style="padding-left:18px">
-      <li>默认入口（/guide、/lazy）为简体中文。</li>
-      <li>每篇文章页面右上角可切换语言版本。</li>
-    </ul>
-    ${notebookBlock}
+    <h2 class="section-title" id="toc">文章目录</h2>
+    <div class="cards">
+      ${cards}
+    </div>
+    <div class="muted" style="margin-top:8px">提示：默认入口（/guide、/lazy、/s4-tank）为简体中文；文章右上角可切换语言。</div>
+    <div style="margin-top:14px">${notebookBlock}</div>
   `;
 
   await writeFile(
@@ -305,7 +354,7 @@ async function renderHome() {
     htmlPage({
       htmlLang: "zh-Hans",
       pageTitle: SITE_TITLE,
-      subtitle: "文章索引与多语言入口",
+      subtitle: "Last War: Survival 攻略合集 · 持续更新",
       nav: LANGS[0].nav,
       navHref: navHrefFor(""),
       langSwitchHtml: "",
@@ -320,65 +369,80 @@ async function renderLangHome(lang) {
   const aiBlockByLang = (() => {
     if (lang.key === "en") {
       return `
-        <h2 id="ai">AI Q&A (Xiao Yang’s guide library)</h2>
-        <p>
-          Notes are collected here: <a href="${NOTEBOOK_LM_URL}">${NOTEBOOK_LM_URL}</a>.
-          You can also ask the AI there about the game.
-        </p>
+        <div class="card" style="border-color:#dbeafe;background:linear-gradient(135deg,#eff6ff,#ffffff)">
+          <div class="card-title">AI Q&A (Xiao Yang’s guide library)</div>
+          <p class="card-desc">Notes are collected in NotebookLM. You can ask the AI there about the game.</p>
+          <div class="pillrow">
+            <a class="pill primary" href="${NOTEBOOK_LM_URL}">Open the library</a>
+            <span class="muted">${NOTEBOOK_LM_URL}</span>
+          </div>
+        </div>
       `;
     }
     if (lang.key === "vi") {
       return `
-        <h2 id="ai">Hỏi đáp AI (Thư viện hướng dẫn của “Tiểu Dương”)</h2>
-        <p>
-          Mình lưu ghi chú tại đây: <a href="${NOTEBOOK_LM_URL}">${NOTEBOOK_LM_URL}</a>.
-          Bạn cũng có thể hỏi AI ở đó về các câu hỏi trong game.
-        </p>
+        <div class="card" style="border-color:#dbeafe;background:linear-gradient(135deg,#eff6ff,#ffffff)">
+          <div class="card-title">Hỏi đáp AI (Thư viện hướng dẫn của “Tiểu Dương”)</div>
+          <p class="card-desc">Ghi chú được tổng hợp trong NotebookLM. Bạn có thể hỏi AI ở đó về các câu hỏi trong game.</p>
+          <div class="pillrow">
+            <a class="pill primary" href="${NOTEBOOK_LM_URL}">Mở thư viện</a>
+            <span class="muted">${NOTEBOOK_LM_URL}</span>
+          </div>
+        </div>
       `;
     }
     if (lang.key === "zh-hant") {
       return `
-        <h2 id="ai">AI 諮詢（小羊收集的攻略庫）</h2>
-        <p>
-          我把資料整理在「小羊收集的攻略庫」：<a href="${NOTEBOOK_LM_URL}">${NOTEBOOK_LM_URL}</a>。
-          你也可以在這裡向 AI 諮詢遊戲相關問題。
-        </p>
+        <div class="card" style="border-color:#dbeafe;background:linear-gradient(135deg,#eff6ff,#ffffff)">
+          <div class="card-title">AI 諮詢（小羊收集的攻略庫）</div>
+          <p class="card-desc">把資料集中整理在 NotebookLM，你可以在那邊直接問 AI 遊戲問題。</p>
+          <div class="pillrow">
+            <a class="pill primary" href="${NOTEBOOK_LM_URL}">打開攻略庫</a>
+            <span class="muted">${NOTEBOOK_LM_URL}</span>
+          </div>
+        </div>
       `;
     }
     return `
-      <h2 id="ai">AI 咨询（小羊收集的攻略库）</h2>
-      <p>
-        我把资料整理在「小羊收集的攻略库」：<a href="${NOTEBOOK_LM_URL}">${NOTEBOOK_LM_URL}</a>。
-        你也可以在这里向 AI 咨询游戏相关问题。
-      </p>
+      <div class="card" style="border-color:#dbeafe;background:linear-gradient(135deg,#eff6ff,#ffffff)">
+        <div class="card-title">AI 咨询（小羊收集的攻略库）</div>
+        <p class="card-desc">把资料集中整理在 NotebookLM，你可以在那边直接问 AI 游戏问题。</p>
+        <div class="pillrow">
+          <a class="pill primary" href="${NOTEBOOK_LM_URL}">打开攻略库</a>
+          <span class="muted">${NOTEBOOK_LM_URL}</span>
+        </div>
+      </div>
     `;
   })();
 
-  const links = (
+  const cards = (
     await Promise.all(
       ARTICLES.map(async (a) => {
         const title = firstHeadingTitle(await readMarkdown(lang.dir, a.file));
-        const href = `/${lang.key}/${a.key}/`;
+        const href = `/${lang.key}/${a.slug}/`;
         const perLang = LANGS.map((l) => {
-          const x = `/${l.key}/${a.key}/`;
-          return `<a href="${x}">${escapeHtml(l.label)}</a>`;
-        }).join(" · ");
-        return `<li style="margin-top:14px">
-          <div style="font-weight:650;margin-bottom:6px"><a href="${href}">${escapeHtml(
-            title
-          )}</a></div>
-          <div style="font-size:13px;color:#374151">${perLang}</div>
-        </li>`;
+          const x = `/${l.key}/${a.slug}/`;
+          return `<a class="pill" href="${x}">${escapeHtml(l.label)}</a>`;
+        }).join(" ");
+
+        return `<div class="card">
+          <div class="card-title"><a href="${href}">${escapeHtml(title)}</a></div>
+          <div class="pillrow">
+            <a class="pill primary" href="${href}">Open</a>
+            <span class="muted">Other languages:</span>
+            ${perLang}
+          </div>
+        </div>`;
       })
     )
   ).join("\n");
 
   const bodyHtml = `
-    <h2 id="toc">文章目录</h2>
-    <ul style="padding-left:18px;margin-top:0">
-      ${links}
-    </ul>
-    ${aiBlockByLang}
+    <h2 class="section-title" id="toc">Articles</h2>
+    <div class="cards">
+      ${cards}
+    </div>
+    <div style="margin-top:14px">${aiBlockByLang}</div>
   `;
 
   await writeFile(
@@ -386,7 +450,14 @@ async function renderLangHome(lang) {
     htmlPage({
       htmlLang: lang.htmlLang,
       pageTitle: SITE_TITLE,
-      subtitle: `${lang.label} · Index`,
+      subtitle:
+        lang.key === "en"
+          ? "Last War: Survival guides · Updated often"
+          : lang.key === "vi"
+            ? "Tổng hợp hướng dẫn · Cập nhật thường xuyên"
+            : lang.key === "zh-hant"
+              ? "Last War: Survival 攻略合集 · 持續更新"
+              : "Last War: Survival 攻略合集 · 持续更新",
       nav: lang.nav,
       navHref,
       langSwitchHtml: `<div class="langbar">${LANGS.map((l) => {
@@ -415,7 +486,7 @@ async function build() {
         lang,
         outLangKey: lang.key,
         outBase: lang.key,
-        articleKey: article.key,
+        articleKey: article.slug,
         file: article.file,
         subtitle:
           article.key === "guide"
@@ -435,10 +506,26 @@ async function build() {
       lang: defaultLang,
       outLangKey: "",
       outBase: "",
-      articleKey: article.key,
+      articleKey: article.slug,
       file: article.file,
       subtitle: article.key === "guide" ? "简体中文（默认）" : "简体中文（默认）",
     });
+  }
+
+  // Backward-compatible redirects (old short paths -> new semantic slugs)
+  for (const article of ARTICLES) {
+    // default
+    await writeFile(
+      path.join(DIST, article.key, "index.html"),
+      redirectPage(`/${article.slug}/`)
+    );
+    // per language
+    for (const lang of LANGS) {
+      await writeFile(
+        path.join(DIST, lang.key, article.key, "index.html"),
+        redirectPage(`/${lang.key}/${article.slug}/`)
+      );
+    }
   }
 }
 

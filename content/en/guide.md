@@ -1,4 +1,6 @@
-# fver Strategy Site — Canyon Storm Battlefield (Beginner Field Guide)
+# fver — Canyon Storm Battlefield Beginner Guide (Dawnbreakers Side)
+
+> Terminology: **fver is the alliance name**. **Dawnbreakers** is the event faction name (this guide assumes you are playing on the Dawnbreakers side).
 
 ## Battlefield Overview
 - **Win condition**: Capture-point score matters more than kills. Rotate “capture → hold → swap”.
@@ -79,4 +81,3 @@ Swap professions and skills based on your role (carry attacker vs low-power supp
 
 ## One Line
 Multi-lane pressure with 40, turret-bombard the center, flank-capture the outer points — make 20 elites choose what to lose.
-

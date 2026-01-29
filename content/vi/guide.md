@@ -1,4 +1,6 @@
-# Trang chiến thuật fver — Chiến trường “Bão Hẻm Núi” (Hướng dẫn thực chiến cho người mới)
+# fver — “Bão Hẻm Núi” (Hướng dẫn thực chiến cho người mới · Phe Dawnbreakers)
+
+> Thuật ngữ: **fver là tên liên minh**. **Dawnbreakers** là tên phe (trong sự kiện) — tài liệu này mặc định bạn đang ở phe Dawnbreakers.
 
 ## Tổng quan chiến trường
 - **Mấu chốt thắng**: Điểm chiếm cứ quan trọng hơn số mạng. Luân chuyển “chiếm → giữ → đổi điểm”.
@@ -80,4 +82,3 @@ Khi chỉ huy hô **“dồn hỏa lực trung tâm”**, thực hiện theo th�
 
 ## Một câu
 40 người kéo giãn nhiều hướng, bào trung tâm bằng tháp pháo, chiếm lén vòng ngoài để kéo nhân lực — khiến 20 tinh anh phải “mất cái này giữ cái kia”.
-

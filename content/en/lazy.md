@@ -1,6 +1,8 @@
-# fver Strategy Site — Canyon Storm Battlefield (Quick Reference)
+# fver — Canyon Storm Battlefield Cheatsheet (Dawnbreakers Side)
 
-> For quick execution and fewer mistakes. Full version: [Beginner Field Guide](../guide/).
+> Terminology: **fver is the alliance name**. **Dawnbreakers** is the event faction name (this cheatsheet assumes you are playing on the Dawnbreakers side).
+
+> For quick execution and fewer mistakes. Full version: [Beginner Field Guide](../last-war-canyon-storm-battlefield-beginner-guide/).
 
 ## One-line Goal
 **Capture points > kills**: with 40 vs 20, pressure multiple lanes and win the center with a single coordinated wave.
@@ -48,4 +50,3 @@ Only available in Canyon Storm. Build energy through kills/captures/gathering.
 - **0–10 min**: gain energy; flank-capture if you can’t fight.  
 - **~12:00**: Virus Lab opens → all to center; banners + Hospital + turret rotations.  
 - **Last 3 min**: full pressure; if close, brute-force contest for time.
-

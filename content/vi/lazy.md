@@ -1,6 +1,8 @@
-# Trang chiến thuật fver — Bão Hẻm Núi (Bản tóm tắt nhanh)
+# fver — Bão Hẻm Núi (Bản tóm tắt nhanh · Phe Dawnbreakers)
 
-> Dành cho ai muốn làm theo ngay để lấy điểm và ít sai. Bản đầy đủ: [Hướng dẫn thực chiến](../guide/).
+> Thuật ngữ: **fver là tên liên minh**. **Dawnbreakers** là tên phe (trong sự kiện) — tài liệu này mặc định bạn đang ở phe Dawnbreakers.
+
+> Dành cho ai muốn làm theo ngay để lấy điểm và ít sai. Bản đầy đủ: [Hướng dẫn thực chiến](../last-war-canyon-storm-battlefield-beginner-guide/).
 
 ## Mục tiêu 1 câu
 **Chiếm điểm > hạ gục**: 40 đánh 20 — kéo nhiều hướng và thắng trung tâm bằng một đợt phối hợp.
@@ -48,4 +50,3 @@ Chỉ dùng trong bản đồ. Tích năng lượng từ hạ gục/chiếm/thu 
 - **0–10 phút**: tích năng lượng; không đánh được thì vòng sau chiếm/thu thập.  
 - **~12:00**: Viện virus mở → all-in trung tâm; cắm cờ + bệnh viện + tháp pháo luân phiên.  
 - **3 phút cuối**: ép toàn bản đồ; sát điểm thì cứ tranh để kéo thời gian.
-
