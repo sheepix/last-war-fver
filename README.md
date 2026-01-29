@@ -45,9 +45,9 @@
 除中文外的语言版本（繁体 / 英文 / 越南语）均**翻译自中文版本**。如发现差异或歧义，请以中文版为准并优先修正中文源文档。
 
 中文版（默认入口）：
-- `https://fver.sheepx.fun/last-war-canyon-storm-battlefield-beginner-guide/`
-- `https://fver.sheepx.fun/last-war-canyon-storm-battlefield-cheatsheet/`
-- `https://fver.sheepx.fun/last-war-s4-tanks-4-plus-1-adam-mixed-lineup/`
+- 峡谷风暴战场新手实战指南（完整版）：`https://fver.sheepx.fun/last-war-canyon-storm-battlefield-beginner-guide/`
+- 峡谷风暴战场超级懒人包（速查版）：`https://fver.sheepx.fun/last-war-canyon-storm-battlefield-cheatsheet/`
+- S4 坦克队：4 坦克 + 1 导弹（亚当）混编阵容（视频要点总结）：`https://fver.sheepx.fun/last-war-s4-tanks-4-plus-1-adam-mixed-lineup/`
 
 ## 术语表（对齐游戏名词）
 
