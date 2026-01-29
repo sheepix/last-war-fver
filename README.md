@@ -1,6 +1,6 @@
 # fver 专用攻略站（Cloudflare Pages）
 
-两篇攻略（完整版 / 懒人包）+ 多语言版本（简体 / 繁体 / 英文 / 越南语），自动生成目录并一键部署到 Cloudflare Pages。
+《Last War: Survival》（最后的战争）手游攻略站：多篇攻略 + 多语言版本（简体 / 繁体 / 英文 / 越南语），自动生成目录并一键部署到 Cloudflare Pages。
 
 ## 攻略库 / AI 咨询
 
@@ -28,6 +28,10 @@
 - 本地调试：`npm run dev`（打开 `http://127.0.0.1:8788`）
 - 部署更新：`./deploy-pages.sh`
 
+## 内容更新与最后修改时间
+
+每篇文章在内容修改后，请同步更新其“最后修改时间”（写在文章顶部），用于读者判断信息是否过期。
+
 ## 翻译语言（需保持同步）
 
 当前需要维护的语言：
@@ -44,6 +48,18 @@
 - `https://fver.sheepx.fun/last-war-canyon-storm-battlefield-beginner-guide/`
 - `https://fver.sheepx.fun/last-war-canyon-storm-battlefield-cheatsheet/`
 - `https://fver.sheepx.fun/last-war-s4-tanks-4-plus-1-adam-mixed-lineup/`
+
+## 术语表（对齐游戏名词）
+
+用于统一文档用词，避免同一技能/概念多种写法：
+
+- 工程师技能：**攻城战旗**（旧称/曾用写法：攻城旌旗）
+- 战场技能（全阵营通用）：**战地医院**（旧称/曾用写法：野战医院）
+- 战场技能（破晓联盟阵营专属）：**炮塔**（旧称/曾用写法：火炮塔）
+- 战场技能（秩序先锋阵营专属）：**地震塔**
+- 战场技能（秩序先锋阵营专属 / 裁决者官职）：**裁决降临**（旧称/曾用写法：裁决者）
+- 战场建筑（常见）：**病毒实验室**、**供电塔**、**数据中心 I**、**样本仓库 I**、**防爆系统 I**、**血清工厂 I**
+- 阵营：**破晓联盟（Dawnbreakers）**、**秩序先锋（Rulebringers）**
 
 新增语言时需要：
 1) 新增 `content/<lang>/guide.md` 与 `content/<lang>/lazy.md`

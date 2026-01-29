@@ -1,6 +1,4 @@
-# fver — Canyon Storm Battlefield Beginner Guide (Dawnbreakers Side)
-
-> Terminology: **fver is the alliance name**. **Dawnbreakers** is the event faction name (this guide assumes you are playing on the Dawnbreakers side).
+# Canyon Storm Battlefield Beginner Guide (Dawnbreakers Side)
 
 ## Battlefield Overview
 - **Win condition**: Capture-point score matters more than kills. Rotate “capture → hold → swap”.
@@ -52,6 +50,8 @@ Swap professions and skills based on your role (carry attacker vs low-power supp
 2) Cast battlefield skills: if you have energy, use **Artillery Turret** near defenders to burn durability; if you’re not healthy, use **Field Hospital** first.  
 3) Carries: start the **rally** with your mitigation/buff setup.  
 4) Low-power players: once the building is taken, **garrison immediately** to fill slots, letting carries rotate to the next objective.
+
+**Mnemonic**: Prep your mitigation/buff loadout (note: if S04 isn’t live yet, you may not have the seasonal cards — use your best defensive setup). Engineers drop banners. See Arbiter → Hospital. Rotate Turrets on defenders.
 
 ## Building Priority
 1) **Virus Lab (★★★★★, opens around 12:00)**  

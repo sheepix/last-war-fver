@@ -7,6 +7,7 @@ const DIST = path.join(ROOT, "dist");
 const SITE_TITLE = "fver 专用攻略站";
 const NOTEBOOK_LM_URL = "https://notebooklm.google.com/notebook/001aafd2-2771-4207-808b-3356ff08cbab";
 const OTHER_GUIDE_SITE_URL = "https://lastwar-tutorial.com/";
+const ERRATA_CONTACT = "勘误请在游戏中联系小羊 SheepX128。";
 
 const LANGS = [
   {
@@ -58,6 +59,11 @@ const ARTICLES = [
     key: "s4-tank",
     slug: "last-war-s4-tanks-4-plus-1-adam-mixed-lineup",
     file: "s4-tank.md",
+  },
+  {
+    key: "canyon-storm-rules",
+    slug: "last-war-canyon-storm-battlefield-official-rules",
+    file: "canyon-storm-official-rules.md",
   },
 ];
 
@@ -205,7 +211,11 @@ function htmlPage({ htmlLang, pageTitle, subtitle, nav, navHref, langSwitchHtml,
       </header>
       <div class="grid ${hasToc ? "has-toc" : ""}">
         ${hasToc ? `<div>${tocHtml || ""}</div>` : ""}
-        <article>${bodyHtml}</article>
+        <article>
+          ${bodyHtml}
+          <hr />
+          <p class="muted">${escapeHtml(ERRATA_CONTACT)}</p>
+        </article>
       </div>
     </div>
   </body>

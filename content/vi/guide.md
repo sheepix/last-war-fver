@@ -1,6 +1,4 @@
-# fver — “Bão Hẻm Núi” (Hướng dẫn thực chiến cho người mới · Phe Dawnbreakers)
-
-> Thuật ngữ: **fver là tên liên minh**. **Dawnbreakers** là tên phe (trong sự kiện) — tài liệu này mặc định bạn đang ở phe Dawnbreakers.
+# “Bão Hẻm Núi” — Hướng dẫn thực chiến cho người mới (Phe Dawnbreakers)
 
 ## Tổng quan chiến trường
 - **Mấu chốt thắng**: Điểm chiếm cứ quan trọng hơn số mạng. Luân chuyển “chiếm → giữ → đổi điểm”.
@@ -53,6 +51,8 @@ Khi chỉ huy hô **“dồn hỏa lực trung tâm”**, thực hiện theo th�
 2) Dùng kỹ năng chiến trường: có năng lượng thì bật **Tháp pháo** cạnh quân thủ; nếu không ổn thì bật **Bệnh viện dã chiến** trước.  
 3) Chủ lực: phát động tập kết để ăn quyền sở hữu.  
 4) Lực thấp: chiếm xong thì **vào đồn trú ngay** để lấp chỗ, chủ lực rảnh tay đổi điểm/đuổi bắt.
+
+**Mẹo nhớ**: Chuẩn bị cấu hình giảm sát thương/buff (lưu ý: nếu S04 chưa mở thì có thể chưa có thẻ mùa — cứ dùng cấu hình phòng thủ tốt nhất). Kỹ sư cắm cờ. Thấy Trọng tài bật bệnh viện. Tháp pháo luân phiên bào trụ.
 
 ## Ưu tiên công trình
 1) **Viện nghiên cứu virus (★★★★★, mở khoảng 12:00)**  
