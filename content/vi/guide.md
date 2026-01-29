@@ -54,6 +54,26 @@ Khi chỉ huy hô **“dồn hỏa lực trung tâm”**, thực hiện theo th�
 
 **Mẹo nhớ**: Chuẩn bị cấu hình giảm sát thương/buff (lưu ý: nếu S04 chưa mở thì có thể chưa có thẻ mùa — cứ dùng cấu hình phòng thủ tốt nhất). Kỹ sư cắm cờ. Thấy Trọng tài bật bệnh viện. Tháp pháo luân phiên bào trụ.
 
+## FAQ
+### Hỏi: Kỹ năng là ai cũng có hay chỉ một người có?
+Đáp: Đây là cơ chế “pha trộn”: **đa số kỹ năng chiến trường ai cũng dùng được (đủ năng lượng là dùng), nhưng kỹ năng nguy hiểm nhất “Giáng lâm phán quyết” chỉ một nhóm rất ít người được dùng**.
+
+#### 1) Kỹ năng đa số người có thể dùng (khi đủ năng lượng)
+Bạn tích năng lượng từ hạ gục/chiếm/thu thập rồi dùng:
+- Phe Dawnbreakers:
+  - **Tháp pháo (炮塔)**: ai đủ năng lượng cũng dùng được (vì vậy chiến thuật “bầy đàn” mới mạnh — 40 người luân phiên bào rất đau).
+  - **Bệnh viện chiến trường (战地医院)**: kỹ năng sinh tồn dùng chung; ai cũng dùng được.
+- Phe Tiên Phong Trật Tự:
+  - **Tháp địa chấn (地震塔)**: tương tự Tháp pháo, dùng để bào theo thời gian; ai đủ năng lượng cũng dùng được.
+  - **Bệnh viện chiến trường (战地医院)**: dùng chung.
+
+#### 2) Kỹ năng đặc quyền (quan trọng)
+- **Kỹ năng**: Giáng lâm phán quyết (裁决降临)  
+- **Ai có**: chỉ người được bổ nhiệm giữ chức “裁决者/Arbiter” bên phe Tiên Phong Trật Tự (thường là người mạnh nhất; theo tab phe có thể là 1–2 người).  
+- **Kết luận**: Dawnbreakers không có “hạt nhân 1 người” — lợi thế của bạn là đông và ai cũng có công cụ; lợi thế của họ là vài Arbiter có thể snowball giao tranh.
+
+**Mẹo đối phó**: theo dõi Arbiter địch có dấu hiệu đặc biệt — họ mới là người có thể “dẫm bay căn cứ” ổn định; phần còn lại xử như PvP bình thường và tập trung vào mục tiêu/điểm.
+
 ## Ưu tiên công trình
 1) **Viện nghiên cứu virus (★★★★★, mở khoảng 12:00)**  
    - Trước khi mở: tập trung đường giữa. Giữ được thì người mới vào đồn trú làm “khiên thịt”; mất thì luân phiên tháp pháo để bào thủ.

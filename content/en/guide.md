@@ -53,6 +53,26 @@ Swap professions and skills based on your role (carry attacker vs low-power supp
 
 **Mnemonic**: Prep your mitigation/buff loadout (note: if S04 isn’t live yet, you may not have the seasonal cards — use your best defensive setup). Engineers drop banners. See Arbiter → Hospital. Rotate Turrets on defenders.
 
+## FAQ
+### Q: Does everyone get the same skills, or only one player?
+A: It’s a mixed system: **most battlefield skills are available to all participants, but the deadliest “Judgment Descent” is limited to a small number of appointed players**.
+
+#### 1) Skills most players can use (once you have enough energy)
+You earn energy through kills/captures/gathering and then cast:
+- Dawnbreakers side:
+  - **Cannon Turret (炮塔)**: any Dawnbreakers participant can cast it when they have enough energy (this is why “pack tactics” works — 40 players rotating casts is huge).
+  - **Battlefield Hospital (战地医院)**: a universal survivability skill; everyone can use it.
+- Rulebringers side:
+  - **Earthquake Tower (地震塔)**: an attrition skill similar to Cannon Turret; any Rulebringers participant can cast it with enough energy.
+  - **Battlefield Hospital (战地医院)**: same as above (universal).
+
+#### 2) Limited‑access skill (key)
+- **Skill**: Judgment Descent (裁决降临)  
+- **Who can use it**: only the Rulebringers’ appointed Arbiter office holder(s) (typically the top power; per the in‑game faction panel it can be 1–2 players).  
+- **Takeaway**: Dawnbreakers do not have a “single nuke” role — your advantage is numbers and shared tools; their advantage is a small number of Arbiters who can snowball fights.
+
+**Counter tip**: watch the enemy Arbiter(s) with the special mark — they are the only ones who can reliably “stomp-delete” bases. Treat the rest more like standard PvP while you play the objective.
+
 ## Building Priority
 1) **Virus Lab (★★★★★, opens around 12:00)**  
    - Rally center before it opens. If you hold it: new players garrison as meat shields. If you lose it: schedule turret rotations to break defenders.

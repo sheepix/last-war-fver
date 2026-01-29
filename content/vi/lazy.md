@@ -12,6 +12,16 @@
 2) **Thấy “Trọng tài” nhảy là tản ra**: đừng tụ lại để họ reset hồi chiêu.  
 3) **Lực thấp = vào đồn trú + bật bệnh viện + cắm cờ**: đừng solo cao thủ.
 
+## 📝 “Siêu lười” kịch bản (cứ làm theo)
+- **Đầu trận**: lao vào **Tháp điện** và **trạm năng lượng** để lấy điểm và năng lượng sớm.  
+- **Giữa trận**: cao thủ phe Tiên Phong Trật Tự sẽ dùng “Trọng tài” (Giáng lâm phán quyết) để dẫm dẹp cụm; phe Dawnbreakers dùng quân số để tách ra chiếm vòng ngoài hoặc tập trung bắt các mục tiêu lẻ.  
+- **Sau ~12 phút**: **Viện virus** mở — all‑in trung tâm; nếu không ăn được trực diện thì luân phiên bật **Tháp pháo** để bào độ bền và quân.  
+- **3 phút cuối**: giữ điểm bằng mọi giá — nhiều trận lật kèo nhờ điểm chiếm cứ phút cuối.  
+
+**Tóm tắt 1 câu**:  
+Tiên Phong Trật Tự (1 đội): dùng “Giáng lâm phán quyết” để xóa cụm và chiếm Tháp điện bật lá chắn.  
+Dawnbreakers (2 đội): trải người chiếm ngoài; trung tâm không ăn được thì bào bằng kỹ năng và đừng để bị one‑shot.  
+
 ## Kỹ năng chiến trường
 Chỉ dùng trong bản đồ. Tích năng lượng từ hạ gục/chiếm/thu thập.
 

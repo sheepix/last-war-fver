@@ -12,6 +12,16 @@
 2) **If Arbiter is jumping, spread out**: don’t stack and feed cooldown refreshes.  
 3) **Low-power value = garrison + Hospital + banners**: don’t duel carries.
 
+## 📝 Ultra‑lazy script (follow this)
+- **Opening**: rush **Power Tower** and **Energy Stations** to secure early score and energy.  
+- **Mid game**: the Rulebringers carry will use Arbiter (“Judgment Descent”) to stomp clusters; Dawnbreakers should use numbers to split-capture outer points or collapse on isolated carries.  
+- **After ~12 minutes**: **Virus Lab** unlocks — all-in center; if you can’t win head‑on, rotate **Cannon Turret** casts to grind durability and troops.  
+- **Last 3 minutes**: hold points no matter the score — many matches flip on late objective income.  
+
+**One-line summary**:  
+Rulebringers (single squad): use **Judgment Descent** to delete stacks and take Power Tower for the shield.  
+Dawnbreakers (two squads): use numbers to spread and capture; if you can’t win center, out‑grind with skills and don’t get one‑shot.  
+
 ## Battlefield Actives
 Only available in Canyon Storm. Build energy through kills/captures/gathering.
 
