@@ -1,69 +1,36 @@
-# fver — Bão Hẻm Núi (Bản tóm tắt nhanh · Phe Dawnbreakers)
+# “Bão Hẻm Núi” — Bản tóm tắt siêu lười (Phe Dawnbreakers)
 
-> Thuật ngữ: **fver là tên liên minh**. **Dawnbreakers** là tên phe (trong sự kiện) — tài liệu này mặc định bạn đang ở phe Dawnbreakers.
+Cập nhật lần cuối: 2026-01-30
 
-> Dành cho ai muốn làm theo ngay để lấy điểm và ít sai. Bản đầy đủ: [Hướng dẫn thực chiến](../last-war-canyon-storm-battlefield-beginner-guide/).
+> Dành cho ai chỉ muốn làm theo để lấy điểm và ít sai. Bản đầy đủ: [Hướng dẫn thực chiến](../last-war-canyon-storm-battlefield-beginner-guide/).  
+> Luật chính thức: [Luật chính thức](../last-war-canyon-storm-battlefield-official-rules/).
 
-## Mục tiêu 1 câu
-**Chiếm điểm > hạ gục**: 40 đánh 20 — kéo nhiều hướng và thắng trung tâm bằng một đợt phối hợp.
+## 📝 Kịch bản “siêu lười” (cứ làm theo)
+- **Đầu trận**: tất cả lao vào **Tháp điện** và **trạm năng lượng**, chiếm trước để lấy điểm và năng lượng.  
+- **Giữa trận**: cao thủ phe Tiên Phong Trật Tự sẽ dùng `Giáng lâm phán quyết` để dẫm dẹp cụm; phe bạn dùng quân số để **tách ra chiếm vòng ngoài**, hoặc vây đánh mục tiêu lẻ.  
+- **Sau ~12 phút**: **Viện virus** mở — all‑in trung tâm; nếu không thắng trực diện thì luân phiên bật **Tháp pháo** để bào độ bền và quân.  
+- **3 phút cuối**: dù chênh điểm thế nào cũng **giữ điểm**, vì điểm chiếm cứ phút cuối có thể lật kèo.  
 
-## 3 luật (học thuộc)
-1) **Công trình trung tâm mở là đi ngay**: Viện virus / Tháp điện quyết định ván.  
-2) **Thấy “Trọng tài” nhảy là tản ra**: đừng tụ lại để họ reset hồi chiêu.  
-3) **Lực thấp = vào đồn trú + bật bệnh viện + dịch chuyển cơ động**: đừng solo cao thủ.
+## 2 kỹ năng chủ động (quan trọng nhất)
+- **Bệnh viện dã chiến**: căn cứ biến hình và dịch chuyển đến vị trí bạn chọn; kéo dài **30 giây**, liên tục hồi độ bền/chữa trọng thương cho bạn và đồng minh gần đó.  
+- **Tháp pháo**: căn cứ biến hình và dịch chuyển đến vị trí bạn chọn; kéo dài **30 giây**, liên tục tấn công **căn cứ địch gần nhất** trong phạm vi.  
 
-## 📝 “Siêu lười” kịch bản (cứ làm theo)
-- **Đầu trận**: lao vào **Tháp điện** và **trạm năng lượng** để lấy điểm và năng lượng sớm.  
-- **Giữa trận**: cao thủ phe Tiên Phong Trật Tự sẽ dùng “Trọng tài” (Giáng lâm phán quyết) để dẫm dẹp cụm; phe Dawnbreakers dùng quân số để tách ra chiếm vòng ngoài hoặc tập trung bắt các mục tiêu lẻ.  
-- **Sau ~12 phút**: **Viện virus** mở — all‑in trung tâm; nếu không ăn được trực diện thì luân phiên bật **Tháp pháo** để bào độ bền và quân.  
-- **3 phút cuối**: giữ điểm bằng mọi giá — nhiều trận lật kèo nhờ điểm chiếm cứ phút cuối.  
-
-**Tóm tắt 1 câu**:  
-Tiên Phong Trật Tự (1 đội): dùng “Giáng lâm phán quyết” để xóa cụm và chiếm Tháp điện bật lá chắn.  
-Dawnbreakers (2 đội): trải người chiếm ngoài; trung tâm không ăn được thì bào bằng kỹ năng và đừng để bị one‑shot.  
-
-## Kỹ năng chiến trường
-Chỉ dùng trong bản đồ. Tích năng lượng từ hạ gục/chiếm/thu thập.
+## Cơ chế kỹ năng (cách dùng)
+- Kỹ năng có hồi chiêu cố định (CD) và cần nạp đủ năng lượng bằng chiếm/thu thập/hạ gục/đồn trú mới dùng được.  
+- Hệ thống phân bổ ngẫu nhiên kỹ năng; dùng xong mới được phân bổ kỹ năng tiếp theo
+- Khi CD xong và đủ năng lượng, chạm biểu tượng kỹ năng để dùng; chọn vị trí đáp tự do, **tương đương tặng 1 lần dịch chuyển miễn phí**
 
 ![Giao diện kỹ năng chiến trường (Bệnh viện dã chiến / Tháp pháo)](/static/images/canyon-storm/battlefield-skill-ui.png)
 
-### Bệnh viện dã chiến = nút cứu mạng
-- Hiệu ứng: mỗi **3 giây** hồi **300 độ bền** cho căn cứ đồng minh gần đó và chữa **150** trọng thương, kéo dài **30 giây**.
-- Khi dùng:  
-  - **Sống sau cú dẫm của Trọng tài**: bật ngay để khỏi bị cú nhảy sau kết liễu.  
-  - **Giao tranh trung tâm**: lực thấp bật để nuôi tuyến trước.
+## ⚠️ Thấy “Giáng lâm phán quyết” thì sống thế nào
+1) **Đừng tụ lại**: đứng tản ra để tránh 1 cú dẫm thổi bay nhiều người (bảng luật ghi CD **300s**; thổi bay 1 căn cứ có thể làm giảm **-30s**; hãy xác nhận trong game).  
+2) **Nhử nhảy hụt**: khi địch dùng thường có dấu hiệu/hiệu ứng rõ; nếu bị nhắm thì dịch chuyển ngay trước khi họ hạ cánh để họ “nhảy hụt”.  
+3) **Chịu được thì bật bệnh viện**: một cú dẫm khoảng **5000** độ bền (căn cứ khoảng **6000**). Nếu còn sống, bật bệnh viện ngay để tránh bị cú sau kết liễu.  
 
-### Tháp pháo = nút mài máu
-- Hiệu ứng: mỗi **2 giây** gây **300 sát thương độ bền** lên căn cứ địch gần nhất và gây **60** trọng thương.
-- Khi dùng:  
-  - **Cao thủ địch ngồi giữ điểm**: luân phiên bật tháp pháo cạnh họ cho tới khi họ rút.
+![Phạm vi “Giáng lâm phán quyết” (ví dụ)](/static/images/canyon-storm/arbiter-judgment-descent-range.png)
 
-## Nhà máy huyết thanh (buff dịch chuyển)
-Nếu có thể thì chiếm/kích hoạt: thường **xóa hồi chiêu dịch chuyển** và **giảm hồi chiêu dịch chuyển** trong một thời gian ngắn (hãy xác nhận trong game).
+## Nhà máy huyết thanh (điểm Buff giai đoạn sau)
+Nhà máy huyết thanh sẽ mở về sau; trên công trình sẽ ngẫu nhiên có buff, hết thời gian đếm ngược sẽ cho người đang chiếm giữ hiệu ứng tương ứng.  
+Mô tả chính thức là “định kỳ cho 1 buff (sẽ công bố trước)”. Có cơ hội thì cứ chiếm/“ké” (ví dụ “ức chế mệt mỏi” thường **xóa hồi chiêu dịch chuyển** và **giảm hồi chiêu dịch chuyển** trong một thời gian ngắn).
 
 ![Buff Nhà máy huyết thanh (ức chế mệt mỏi)](/static/images/canyon-storm/serum-factory-buff.png)
-
-## ⚠️ Kỹ năng độc quyền của địch: “Trọng tài”
-- Kéo dài **120 giây**; mỗi lần hạ cánh gây **5000** độ bền diện rộng (tối đa thường ~**6000**).  
-- Hồi chiêu: thổi bay 1 căn cứ của bạn → họ **-30s**; bạn bị thổi bay → bạn **+60s**.
-
-### 4 cách khắc chế (copy-paste)
-1) **Tản ra**: vòng lỏng quanh công trình, không đứng chồng.  
-2) **Nhử và né**: dịch chuyển đúng khoảnh khắc để họ nhảy hụt.  
-3) **Bật bệnh viện để cầm máu**: sống một lần → bật ngay, ép họ tốn thêm 1 cú nhảy.  
-4) **Mài bằng tháp pháo**: luân phiên bào độ bền và quân để ép rút.
-
-## Cập nhật (thực tế 2026-01-29)
-Kỹ năng nghề nghiệp **không dùng được** trong Bão Hẻm Núi (ví dụ Kỹ sư “Cờ công thành”). Tập trung vào kỹ năng chiến trường + chiếm điểm.
-
-## Thứ tự “một đợt” (không có kỹ năng nghề)
-1) Báo vị trí Trọng tài địch; tản ra / dịch chuyển để họ nhảy hụt.  
-2) Yếu hoặc dễ bị dẫm → bật **Bệnh viện dã chiến** trước.  
-3) Luân phiên bật **Tháp pháo** để bào độ bền và quân.  
-4) Chủ lực: phát động tập kết.  
-5) Lực thấp: chiếm xong vào đồn trú ngay.
-
-## Mốc thời gian
-- **0–10 phút**: tích năng lượng; không đánh được thì vòng sau chiếm/thu thập.  
-- **~12:00**: Viện virus mở → all-in trung tâm; bệnh viện + tháp pháo luân phiên; tản ra vs Trọng tài.  
-- **3 phút cuối**: ép toàn bản đồ; sát điểm thì cứ tranh để kéo thời gian.

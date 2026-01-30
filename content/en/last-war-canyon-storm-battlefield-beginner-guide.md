@@ -1,5 +1,8 @@
 # Canyon Storm Battlefield Beginner Guide (Dawnbreakers Side)
 
+## Updates / Errata (chronological)
+- **2026-01-29**: Confirmed that **profession skills are NOT usable** in Canyon Storm (e.g., Engineer “Siege Banner”, War Leader “Recall”, etc.). The rest of this guide focuses on **battlefield actives (Field Hospital / Artillery Turret) + objectives + teleport mobility** (verify against your current in-game version).
+
 ## Battlefield Overview
 - **Win condition**: Capture-point score matters more than kills. Rotate “capture → hold → swap”.
 - **Team identity**: 40 vs 20 plays like a pack — multi-lane pressure + concentrated bombardment.
@@ -24,6 +27,8 @@ Battlefield skills only work inside the Canyon Storm map. You build energy throu
 - Owner: The Rulebringers’ Arbiter office holder (usually their top power).  
 - Effect: Lasts **120s**. Each teleport landing deals **5000 base durability** damage in a large area (a typical base has ~**6000** total durability, so this is near-lethal).  
 - Cooldown mechanic (key): If they destroy (blow away) a base, their teleport cooldown is reduced by **30s**; if you get blown away, your teleport cooldown is increased by **60s**.  
+
+![Judgment Descent range (example)](/static/images/canyon-storm/arbiter-judgment-descent-range.png)
 
 #### How to Counter It
 - **Tactic 1: Spread out**  

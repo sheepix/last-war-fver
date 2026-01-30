@@ -1,5 +1,8 @@
 # “Bão Hẻm Núi” — Hướng dẫn thực chiến cho người mới (Phe Dawnbreakers)
 
+## Cập nhật / đính chính (theo thời gian)
+- **2026-01-29**: Xác nhận **không dùng được kỹ năng nghề** trong Bão Hẻm Núi (ví dụ Kỹ sư “Cờ công thành”, Thủ lĩnh chiến tranh “Triệu hồi tức thì”, v.v.). Phần còn lại của tài liệu tập trung vào **kỹ năng chiến trường (Bệnh viện dã chiến / Tháp pháo) + chiếm điểm + dịch chuyển cơ động** (hãy đối chiếu theo phiên bản hiện tại trong game).
+
 ## Tổng quan chiến trường
 - **Mấu chốt thắng**: Điểm chiếm cứ quan trọng hơn số mạng. Luân chuyển “chiếm → giữ → đổi điểm”.
 - **Định vị lối chơi**: 40 đánh 20 theo kiểu “bầy sói” — kéo giãn nhiều hướng + dồn hỏa lực.
@@ -24,6 +27,8 @@ Kỹ năng chiến trường chỉ có hiệu lực trong bản đồ Bão Hẻm
 - Người sở hữu: Phe Tiên Phong Trật Tự (địch) giữ chức “Trọng tài” (thường là người mạnh nhất).  
 - Hiệu ứng: Kéo dài **120 giây**. Mỗi lần dịch chuyển hạ cánh gây **5000 độ bền căn cứ** lên khu vực rộng (độ bền tối đa căn cứ thường ~**6000**, gần như bị hạ gục).  
 - Cơ chế hồi chiêu (mấu chốt): Nếu họ thổi bay 1 căn cứ, hồi chiêu dịch chuyển của họ **giảm 30 giây**; nếu bạn bị thổi bay, hồi chiêu dịch chuyển của bạn **tăng 60 giây**.  
+
+![Phạm vi “Giáng lâm phán quyết” (ví dụ)](/static/images/canyon-storm/arbiter-judgment-descent-range.png)
 
 #### Cách đối phó (cốt lõi)
 - **Chiêu 1: Tản ra**  
