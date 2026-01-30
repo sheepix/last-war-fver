@@ -135,7 +135,7 @@ function languageSwitcher({ currentLangKey, pageKind }) {
   return `<div class="langbar" aria-label="language">${links}</div>`;
 }
 
-function htmlPage({ htmlLang, pageTitle, subtitle, nav, navHref, langSwitchHtml, tocHtml, bodyHtml }) {
+function htmlPage({ htmlLang, pageKind, pageTitle, subtitle, nav, navHref, langSwitchHtml, tocHtml, bodyHtml }) {
   const now = new Date().toISOString().slice(0, 19).replace("T", " ");
   const hasToc = Boolean(tocHtml && tocHtml.trim().length > 0);
   return `<!doctype html>
@@ -145,7 +145,7 @@ function htmlPage({ htmlLang, pageTitle, subtitle, nav, navHref, langSwitchHtml,
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>${escapeHtml(`${SITE_TITLE} · ${pageTitle}`)}</title>
     <style>
-      :root { color-scheme: light; }
+      :root { color-scheme: light; --article-max: 760px; }
       body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; margin: 0; color: #111827; background: radial-gradient(900px 500px at 10% 0%, #eef2ff, rgba(255,255,255,0) 60%), radial-gradient(900px 500px at 90% 0%, #ecfeff, rgba(255,255,255,0) 60%), #ffffff; }
       a { color: #2563eb; text-decoration: none; }
       a:hover { text-decoration: underline; }
@@ -166,11 +166,13 @@ function htmlPage({ htmlLang, pageTitle, subtitle, nav, navHref, langSwitchHtml,
       .toc ol { margin: 0; padding-left: 18px; }
       .toc li { margin: 6px 0; font-size: 13px; line-height: 1.3; }
       article { border: 1px solid #e5e7eb; border-radius: 14px; padding: 18px 18px 22px; background: rgba(255,255,255,.9); box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06); backdrop-filter: blur(6px); }
+      .page-article article { width: 100%; max-width: var(--article-max); margin: 0 auto; }
       article h1 { font-size: 26px; }
       article h2 { margin-top: 22px; font-size: 20px; }
       article h3 { margin-top: 18px; font-size: 16px; }
       article p { line-height: 1.7; }
       article li { line-height: 1.65; }
+      .page-article article img { max-width: 100%; height: auto; }
       article code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 0.95em; background: #f3f4f6; padding: 0.15em 0.35em; border-radius: 6px; }
       article pre { background: #0b1021; color: #e5e7eb; padding: 14px 14px; border-radius: 10px; overflow: auto; }
       article pre code { background: transparent; padding: 0; }
@@ -191,7 +193,7 @@ function htmlPage({ htmlLang, pageTitle, subtitle, nav, navHref, langSwitchHtml,
       .section-title { margin: 0; font-size: 18px; }
     </style>
   </head>
-  <body>
+  <body class="page-${escapeHtml(pageKind || "base")}">
     <div class="wrap">
       <header>
         <div class="toprow">
@@ -293,6 +295,7 @@ async function renderArticle({ lang, outLangKey, outBase, articleKey, file, subt
     outDir,
     htmlPage({
       htmlLang: lang.htmlLang,
+      pageKind: "article",
       pageTitle,
       subtitle,
       nav: lang.nav,
@@ -378,6 +381,7 @@ async function renderHome() {
     path.join(DIST, "index.html"),
     htmlPage({
       htmlLang: "zh-Hans",
+      pageKind: "home",
       pageTitle: SITE_TITLE,
       subtitle: "Last War: Survival 攻略合集 · 持续更新",
       nav: LANGS[0].nav,
@@ -474,6 +478,7 @@ async function renderLangHome(lang) {
     path.join(DIST, lang.key, "index.html"),
     htmlPage({
       htmlLang: lang.htmlLang,
+      pageKind: "home",
       pageTitle: SITE_TITLE,
       subtitle:
         lang.key === "en"
