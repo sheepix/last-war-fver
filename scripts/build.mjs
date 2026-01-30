@@ -48,22 +48,22 @@ const ARTICLES = [
   {
     key: "guide",
     slug: "last-war-canyon-storm-battlefield-beginner-guide",
-    file: "guide.md",
+    file: "last-war-canyon-storm-battlefield-beginner-guide.md",
   },
   {
     key: "lazy",
     slug: "last-war-canyon-storm-battlefield-cheatsheet",
-    file: "lazy.md",
+    file: "last-war-canyon-storm-battlefield-cheatsheet.md",
   },
   {
     key: "s4-tank",
     slug: "last-war-s4-tanks-4-plus-1-adam-mixed-lineup",
-    file: "s4-tank.md",
+    file: "last-war-s4-tanks-4-plus-1-adam-mixed-lineup.md",
   },
   {
     key: "canyon-storm-rules",
     slug: "last-war-canyon-storm-battlefield-official-rules",
-    file: "canyon-storm-official-rules.md",
+    file: "last-war-canyon-storm-battlefield-official-rules.md",
   },
 ];
 
@@ -224,6 +224,21 @@ function htmlPage({ htmlLang, pageTitle, subtitle, nav, navHref, langSwitchHtml,
 
 async function ensureDir(dir) {
   await fs.mkdir(dir, { recursive: true });
+}
+
+async function pathExists(p) {
+  try {
+    await fs.access(p);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function copyStaticAssets() {
+  const src = path.join(ROOT, "static");
+  if (!(await pathExists(src))) return;
+  await fs.cp(src, path.join(DIST, "static"), { recursive: true });
 }
 
 async function writeFile(filePath, contents) {
@@ -487,6 +502,7 @@ async function build() {
   await fs.rm(DIST, { recursive: true, force: true });
   await ensureDir(DIST);
 
+  await copyStaticAssets();
   await renderHome();
 
   for (const lang of LANGS) {

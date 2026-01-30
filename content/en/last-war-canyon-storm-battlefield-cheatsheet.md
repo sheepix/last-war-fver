@@ -10,7 +10,7 @@
 ## Three Rules (memorize)
 1) **Go center when it opens**: Virus Lab / Power Station decide the game.  
 2) **If Arbiter is jumping, spread out**: don’t stack and feed cooldown refreshes.  
-3) **Low-power value = garrison + Hospital + banners**: don’t duel carries.
+3) **Low-power value = garrison + Hospital + mobility**: don’t duel carries.
 
 ## 📝 Ultra‑lazy script (follow this)
 - **Opening**: rush **Power Tower** and **Energy Stations** to secure early score and energy.  
@@ -25,6 +25,8 @@ Dawnbreakers (two squads): use numbers to spread and capture; if you can’t win
 ## Battlefield Actives
 Only available in Canyon Storm. Build energy through kills/captures/gathering.
 
+![Battlefield skill UI (Field Hospital / Artillery Turret)](/static/images/canyon-storm/battlefield-skill-ui.png)
+
 ### Field Hospital = “Save me” button
 - Effect: every **3s** restore **300 durability** to nearby allied bases and heal **150 severely wounded** units, lasts **30s**.
 - When to press:  
@@ -36,6 +38,11 @@ Only available in Canyon Storm. Build energy through kills/captures/gathering.
 - When to press:  
   - **Enemy carry sits on a point**: rotate turret casts near them until they retreat.
 
+## Serum Factory (teleport buff)
+If you can, capture/trigger it: it typically **resets teleport cooldown** and **reduces teleport cooldown** for a short duration (verify in-game).
+
+![Serum Factory buff (fatigue suppression)](/static/images/canyon-storm/serum-factory-buff.png)
+
 ## ⚠️ Enemy-only Skill: Arbiter
 - Effect: **120s** duration; each landing deals **5000** durability in a large area (typical max ~**6000**).  
 - Cooldown: blow away one of you → their cooldown **-30s**; you get blown away → your cooldown **+60s**.
@@ -46,17 +53,17 @@ Only available in Canyon Storm. Build energy through kills/captures/gathering.
 3) **Hospital stabilize**: survive once → pop Hospital and force them to spend another full jump.  
 4) **Turret attrition**: rotate turrets to bleed durability and troops.
 
-## Professions (pick by role)
-- **Engineer (support)**: Siege Banner + Medical Aid.  
-- **War Leader (carry)**: Recall + Fanaticism/Burst.
+## Update (tested 2026-01-29)
+Profession skills are **not usable** in Canyon Storm (e.g., Engineer “Siege Banner”). Focus on battlefield actives + objective play.
 
-## “One-wave” order (when called to focus center)
-1) Engineers: drop **Siege Banners**.  
-2) Use **Artillery Turret** if you have energy; use **Field Hospital** if you’re not healthy.  
-3) Carries: start the rally.  
-4) Low-power: garrison instantly after capture.
+## “One-wave” order (no profession skills)
+1) Call out the enemy Arbiter(s); spread/teleport to make them miss.  
+2) Use **Field Hospital** if you’re low or likely to get stomped.  
+3) Rotate **Artillery Turret** casts to grind durability/troops.  
+4) Carries: start the rally.  
+5) Low-power: garrison instantly after capture.
 
 ## Timeline
 - **0–10 min**: gain energy; flank-capture if you can’t fight.  
-- **~12:00**: Virus Lab opens → all to center; banners + Hospital + turret rotations.  
+- **~12:00**: Virus Lab opens → all to center; Hospital + turret rotations; spread out vs Arbiter.  
 - **Last 3 min**: full pressure; if close, brute-force contest for time.

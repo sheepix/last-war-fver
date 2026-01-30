@@ -62,7 +62,7 @@
 - 阵营：**破晓联盟（Dawnbreakers）**、**秩序先锋（Rulebringers）**
 
 新增语言时需要：
-1) 新增 `content/<lang>/guide.md` 与 `content/<lang>/lazy.md`
+1) 新增 `content/<lang>/last-war-canyon-storm-battlefield-beginner-guide.md` 与 `content/<lang>/last-war-canyon-storm-battlefield-cheatsheet.md`
 2) 更新 `scripts/build.mjs` 里的 `LANGS`
 
 ## 兼容入口

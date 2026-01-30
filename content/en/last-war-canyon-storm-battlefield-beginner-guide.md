@@ -8,6 +8,8 @@
 ## Skills & Loadout
 Battlefield skills only work inside the Canyon Storm map. You build energy through battlefield actions (kills, capturing, gathering) and then cast them.
 
+![Battlefield skill UI (Field Hospital / Artillery Turret)](/static/images/canyon-storm/battlefield-skill-ui.png)
+
 ### 1) Battlefield Active Skills
 - **Core survivability: Field Hospital**  
   - Type: Support / Recovery  
@@ -35,23 +37,19 @@ Battlefield skills only work inside the Canyon Storm map. You build energy throu
 
 **Mnemonic**: See Arbiter → spread out. Low durability → pop Hospital. Make them jump into empty space. After two minutes, swarm back and take the points.
 
-### 3) Profession Skills
-Swap professions and skills based on your role (carry attacker vs low-power support).
+### 3) Update / Errata: Profession skills are NOT usable in Canyon Storm (tested 2026-01-29)
+In Canyon Storm, you **cannot use profession skills** (e.g., Engineer’s “Siege Banner”, War Leader’s “Recall”, etc.).  
+So this guide focuses on **battlefield actives (Field Hospital / Artillery Turret) + objective play + teleport mobility**. Always follow what you can actually cast in-game.
 
-- **Support / Garrison filler: Engineer**  
-  - Must-have: Siege Banner — place banners to increase allied attack in range (stackable). In fights for Virus Lab / Power Station, Engineers ring the building with banners to boost your front-liners.  
-  - Must-have: Medical Aid — speeds up hospital healing so you can refill and return quickly.
-- **Main force / Rally role: War Leader**  
-  - Must-have: Recall — tactical reset to avoid being isolated by Arbiter pressure.  
-  - Must-have: Fanaticism / Burst — short, high burst window for the last hit to secure building ownership.
+### 4) Center “One-Wave” Checklist (no profession skills)
+When the commander calls “focus center”, do it in this order:
+1) Callouts & marks: locate the enemy Arbiter(s); be ready to spread out / teleport to make them miss.  
+2) Survive first: if you’re low or likely to get stomped, pop **Field Hospital** early.  
+3) Grind next: rotate **Artillery Turret** casts to drain durability and troops, forcing repairs or retreats.  
+4) Carries: start the **rally** to contest ownership.  
+5) Low-power: once captured, **garrison immediately** so carries can rotate.
 
-### 4) “One-Wave” Execution (when the commander calls “focus center”)
-1) Engineers first: drop **Siege Banners** next to the target building (the more the better).  
-2) Cast battlefield skills: if you have energy, use **Artillery Turret** near defenders to burn durability; if you’re not healthy, use **Field Hospital** first.  
-3) Carries: start the **rally** with your mitigation/buff setup.  
-4) Low-power players: once the building is taken, **garrison immediately** to fill slots, letting carries rotate to the next objective.
-
-**Mnemonic**: Prep your mitigation/buff loadout (note: if S04 isn’t live yet, you may not have the seasonal cards — use your best defensive setup). Engineers drop banners. See Arbiter → Hospital. Rotate Turrets on defenders.
+**Mnemonic**: Center opens → regroup. See Judgment Descent → spread. Low durability → Hospital. Rotate Turrets to grind.
 
 ## Building Priority
 1) **Virus Lab (★★★★★, opens around 12:00)**  
@@ -60,6 +58,10 @@ Swap professions and skills based on your role (carry attacker vs low-power supp
    - You holding it = points + energy; enemy holding it = shield threat. Keep a squad to contest and never leave it unattended.
 3) **Data Center / Sample Warehouse (★★★)**  
    - New players’ job: flank-capture to split enemies. Holding it is profit; losing it still drains their attention.
+4) **Serum Factory (★★★)**  
+   - What it does: grants a “fatigue suppression”-type buff — typically it can **reset your teleport cooldown immediately** and **reduce teleport cooldown** for a short time (verify the exact numbers in your current version).  
+
+![Serum Factory buff (fatigue suppression)](/static/images/canyon-storm/serum-factory-buff.png)
 
 ## Three-Phase Playbook
 - **0–10 minutes**  
@@ -101,3 +103,5 @@ You earn energy through kills/captures/gathering and then cast:
 - **Takeaway**: Dawnbreakers do not have a “single nuke” role — your advantage is numbers and shared tools; their advantage is a small number of Arbiters who can snowball fights.
 
 **Counter tip**: watch the enemy Arbiter(s) with the special mark — they are the only ones who can reliably “stomp-delete” bases. Treat the rest more like standard PvP while you play the objective.
+
+Extra note: tested on 2026-01-29 — profession skills are not usable in Canyon Storm. Follow what you can actually cast in-game.

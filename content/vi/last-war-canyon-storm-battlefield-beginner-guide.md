@@ -8,6 +8,8 @@
 ## Kỹ năng & cấu hình
 Kỹ năng chiến trường chỉ có hiệu lực trong bản đồ Bão Hẻm Núi. Tích năng lượng bằng hành vi trong chiến trường (hạ gục, chiếm, thu thập) rồi mới dùng.
 
+![Giao diện kỹ năng chiến trường (Bệnh viện dã chiến / Tháp pháo)](/static/images/canyon-storm/battlefield-skill-ui.png)
+
 ### 1) Kỹ năng chủ động của chiến trường
 - **Sinh tồn cốt lõi: Bệnh viện dã chiến**  
   - Loại: Hỗ trợ / Hồi phục  
@@ -35,24 +37,19 @@ Kỹ năng chiến trường chỉ có hiệu lực trong bản đồ Bão Hẻm
 
 **Mẹo nhớ**: Thấy Trọng tài → tản ra. Còn sống mà độ bền thấp → bật bệnh viện. Làm họ nhảy hụt. Qua 2 phút thì tràn lên lấy điểm lại.
 
-### 3) Kỹ năng nghề nghiệp
-Đổi nghề và lắp kỹ năng theo vai trò (đánh chính vs hỗ trợ lực thấp).
+### 3) Cập nhật / đính chính: Không dùng được kỹ năng nghề trong Bão Hẻm Núi (thực tế 2026-01-29)
+Trong Bão Hẻm Núi, bạn **không thể dùng kỹ năng nghề nghiệp** (ví dụ Kỹ sư “Cờ công thành”, Thủ lĩnh chiến tranh “Triệu hồi tức thì”, v.v.).  
+Vì vậy tài liệu này tập trung vào **kỹ năng chiến trường (Bệnh viện dã chiến / Tháp pháo) + chiếm điểm + dịch chuyển cơ động**; luôn theo đúng những gì bạn dùng được trong game.
 
-- **Hỗ trợ / lấp chỗ đồn trú: Kỹ sư**  
-  - Bắt buộc: Cờ công thành — cắm cờ tăng tấn công cho đồng minh trong phạm vi (cộng dồn). Khi đánh Viện virus/Tháp điện, kỹ sư cắm cờ quanh công trình để tăng tỷ lệ thắng cho “đầu tàu”.  
-  - Bắt buộc: Sơ cứu chiến trường — tăng tốc điều trị trong bệnh viện để bạn bổ sung quân và quay lại nhanh.
-- **Chủ lực / vai trò tập kết: Thủ lĩnh chiến tranh**  
-  - Bắt buộc: Triệu hồi tức thì — điều chỉnh vị trí, tránh bị Trọng tài bắt lẻ.  
-  - Bắt buộc: Tử sĩ / Cuồng nhiệt — tăng bùng nổ ngắn hạn để chốt đòn quyết định giành quyền sở hữu công trình.
+### 4) Checklist “một đợt” tranh trung tâm (không có kỹ năng nghề)
+Khi chỉ huy hô **“dồn hỏa lực trung tâm”**, làm theo thứ tự:
+1) Báo điểm & đánh dấu: xác định vị trí Trọng tài địch; sẵn sàng tản ra / dịch chuyển để họ nhảy hụt.  
+2) Ưu tiên sống: máu không ổn hoặc dễ bị dẫm thì bật **Bệnh viện dã chiến** trước.  
+3) Rồi mới bào: có năng lượng thì luân phiên bật **Tháp pháo** để bào độ bền và quân, ép sửa hoặc rút.  
+4) Chủ lực: phát động tập kết để tranh quyền sở hữu.  
+5) Lực thấp: chiếm xong thì **vào đồn trú ngay** để lấp chỗ, chủ lực đổi điểm.
 
-### 4) Quy trình “một đợt” phối hợp kỹ năng
-Khi chỉ huy hô **“dồn hỏa lực trung tâm”**, thực hiện theo thứ tự:
-1) Kỹ sư: cắm **Cờ công thành** cạnh công trình mục tiêu (càng nhiều càng tốt).  
-2) Dùng kỹ năng chiến trường: có năng lượng thì bật **Tháp pháo** cạnh quân thủ; nếu không ổn thì bật **Bệnh viện dã chiến** trước.  
-3) Chủ lực: phát động tập kết để ăn quyền sở hữu.  
-4) Lực thấp: chiếm xong thì **vào đồn trú ngay** để lấp chỗ, chủ lực rảnh tay đổi điểm/đuổi bắt.
-
-**Mẹo nhớ**: Chuẩn bị cấu hình giảm sát thương/buff (lưu ý: nếu S04 chưa mở thì có thể chưa có thẻ mùa — cứ dùng cấu hình phòng thủ tốt nhất). Kỹ sư cắm cờ. Thấy Trọng tài bật bệnh viện. Tháp pháo luân phiên bào trụ.
+**Mẹo nhớ**: Trung tâm mở → tập hợp. Thấy Giáng lâm phán quyết → tản ra. Độ bền thấp → bật bệnh viện. Tháp pháo luân phiên để bào.
 
 ## Ưu tiên công trình
 1) **Viện nghiên cứu virus (★★★★★, mở khoảng 12:00)**  
@@ -61,6 +58,10 @@ Khi chỉ huy hô **“dồn hỏa lực trung tâm”**, thực hiện theo th�
    - Ta chiếm = điểm cao + năng lượng; địch chiếm = nguy cơ lá chắn. Cử tổ quấy rối thường trực, không để trống.
 3) **Trung tâm dữ liệu / Kho mẫu (★★★)**  
    - Người mới: vòng sau chiếm lén để ép địch chia người; giữ được là lời, mất vẫn kéo được nhân lực của địch.
+4) **Nhà máy huyết thanh (★★★)**  
+   - Tác dụng: cho buff kiểu “ức chế mệt mỏi” — thường có thể **xóa ngay hồi chiêu dịch chuyển** và **giảm hồi chiêu dịch chuyển** trong một thời gian (hãy kiểm tra số liệu theo phiên bản hiện tại trong game).  
+
+![Buff Nhà máy huyết thanh (ức chế mệt mỏi)](/static/images/canyon-storm/serum-factory-buff.png)
 
 ## Kịch bản 3 giai đoạn
 - **0–10 phút**  
@@ -102,3 +103,5 @@ Bạn tích năng lượng từ hạ gục/chiếm/thu thập rồi dùng:
 - **Kết luận**: Dawnbreakers không có “hạt nhân 1 người” — lợi thế của bạn là đông và ai cũng có công cụ; lợi thế của họ là vài Arbiter có thể snowball giao tranh.
 
 **Mẹo đối phó**: theo dõi Arbiter địch có dấu hiệu đặc biệt — họ mới là người có thể “dẫm bay căn cứ” ổn định; phần còn lại xử như PvP bình thường và tập trung vào mục tiêu/điểm.
+
+Ghi chú thêm: thực tế 2026-01-29 — không dùng được kỹ năng nghề trong Bão Hẻm Núi (tùy phiên bản trong game).
