@@ -76,7 +76,3 @@
 新增语言时需要：
 1) 新增 `content/<lang>/last-war-canyon-storm-battlefield-cheatsheet.md`
 2) 更新 `scripts/build.mjs` 里的 `LANGS`
-
-## 兼容入口
-
-根目录的 `canyon-storm-battlefield-guide.md` / `canyon-storm-battlefield-guide-lazy-pack.md` 为占位提示，方便旧链接/书签迁移；实际内容在 `content/<语言>/`。
