@@ -22,11 +22,24 @@
 - `scripts/build.mjs`：把 Markdown 生成静态站点到 `dist/`
 - `deploy-pages.sh`：一键构建并部署到 Cloudflare Pages
 
+## 自动部署（推荐）
+
+推荐使用 Cloudflare Pages GitHub 集成实现自动部署：
+
+1. 登录 Cloudflare Dashboard → Pages
+2. 选择 `lw-sheepx-fun` 项目 → Settings → Git 集成
+3. Connect to Git → 授权 sheepix/last-war-fver 仓库
+4. 设置 Production branch: `main`
+
+启用后，push 到 main 分支会自动部署。
+
+> **注意**：启用 GitHub 集成后，无需再手动运行 `./deploy-pages.sh`。
+
 ## 常用命令
 
 - 本地生成：`npm run build`
 - 本地调试：`npm run dev`（打开 `http://127.0.0.1:8788`）
-- 部署更新：`./deploy-pages.sh`
+- 手动部署（不推荐，仅保留备用）：`./deploy-pages.sh`
 
 ## 内容更新与最后修改时间
 
