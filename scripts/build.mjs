@@ -46,11 +46,6 @@ const LANGS = [
 
 const ARTICLES = [
   {
-    key: "guide",
-    slug: "last-war-canyon-storm-battlefield-beginner-guide",
-    file: "last-war-canyon-storm-battlefield-beginner-guide.md",
-  },
-  {
     key: "lazy",
     slug: "last-war-canyon-storm-battlefield-cheatsheet",
     file: "last-war-canyon-storm-battlefield-cheatsheet.md",
@@ -59,11 +54,6 @@ const ARTICLES = [
     key: "s4-tank",
     slug: "last-war-s4-tanks-4-plus-1-adam-mixed-lineup",
     file: "last-war-s4-tanks-4-plus-1-adam-mixed-lineup.md",
-  },
-  {
-    key: "canyon-storm-rules",
-    slug: "last-war-canyon-storm-battlefield-official-rules",
-    file: "last-war-canyon-storm-battlefield-official-rules.md",
   },
 ];
 

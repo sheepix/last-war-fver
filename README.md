@@ -58,7 +58,6 @@
 除中文外的语言版本（繁体 / 英文 / 越南语）均**翻译自中文版本**。如发现差异或歧义，请以中文版为准并优先修正中文源文档。
 
 中文版（默认入口）：
-- 峡谷风暴战场新手实战指南（完整版）：`https://fver.sheepx.fun/last-war-canyon-storm-battlefield-beginner-guide/`
 - 峡谷风暴战场超级懒人包（速查版）：`https://fver.sheepx.fun/last-war-canyon-storm-battlefield-cheatsheet/`
 - S4 坦克队：4 坦克 + 1 导弹（亚当）混编阵容（视频要点总结）：`https://fver.sheepx.fun/last-war-s4-tanks-4-plus-1-adam-mixed-lineup/`
 
@@ -75,7 +74,7 @@
 - 阵营：**破晓联盟（Dawnbreakers）**、**秩序先锋（Rulebringers）**
 
 新增语言时需要：
-1) 新增 `content/<lang>/last-war-canyon-storm-battlefield-beginner-guide.md` 与 `content/<lang>/last-war-canyon-storm-battlefield-cheatsheet.md`
+1) 新增 `content/<lang>/last-war-canyon-storm-battlefield-cheatsheet.md`
 2) 更新 `scripts/build.mjs` 里的 `LANGS`
 
 ## 兼容入口
