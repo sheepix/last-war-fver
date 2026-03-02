@@ -55,6 +55,11 @@ const ARTICLES = [
     slug: "last-war-s4-tanks-4-plus-1-adam-mixed-lineup",
     file: "last-war-s4-tanks-4-plus-1-adam-mixed-lineup.md",
   },
+  {
+    key: "s4-w12",
+    slug: "last-war-s4-week1-week2-guide",
+    file: "last-war-s4-week1-week2-guide.md",
+  },
 ];
 
 function slugify(text) {
