@@ -60,6 +60,11 @@ const ARTICLES = [
     slug: "last-war-s4-week1-week2-guide",
     file: "last-war-s4-week1-week2-guide.md",
   },
+  {
+    key: "sarah-kim",
+    slug: "last-war-sarah-vs-kim-guide",
+    file: "last-war-sarah-vs-kim-guide.md",
+  },
 ];
 
 function slugify(text) {
