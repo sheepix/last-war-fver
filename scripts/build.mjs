@@ -65,6 +65,11 @@ const ARTICLES = [
     slug: "last-war-sarah-vs-kim-guide",
     file: "last-war-sarah-vs-kim-guide.md",
   },
+  {
+    key: "op-sandbox",
+    slug: "last-war-operation-sandbox-air-vs-tank",
+    file: "last-war-operation-sandbox-air-vs-tank.md",
+  },
 ];
 
 function slugify(text) {
