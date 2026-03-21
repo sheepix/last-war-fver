@@ -51,6 +51,11 @@ const ARTICLES = [
     file: "last-war-canyon-storm-battlefield-cheatsheet.md",
   },
   {
+    key: "s4-guide",
+    slug: "last-war-s4-comprehensive-guide",
+    file: "last-war-s4-comprehensive-guide.md",
+  },
+  {
     key: "s4-tank",
     slug: "last-war-s4-tanks-4-plus-1-adam-mixed-lineup",
     file: "last-war-s4-tanks-4-plus-1-adam-mixed-lineup.md",
